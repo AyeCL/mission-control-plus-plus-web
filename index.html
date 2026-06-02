@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mission Control++</title>
+    <meta
+      name="description"
+      content="A tiny free macOS utility that adds Command-W and Command-Q shortcuts while Mission Control is open."
+    >
+    <meta property="og:title" content="Mission Control++">
+    <meta
+      property="og:description"
+      content="Close hovered windows or quit hovered apps without leaving Mission Control."
+    >
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ayecl.github.io/mission-control-plus-plus-web/">
+    <meta
+      property="og:image"
+      content="https://ayecl.github.io/mission-control-plus-plus-web/assets/app-icon.png"
+    >
+    <meta name="twitter:card" content="summary">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="Mission Control++ home">
+        <img src="assets/app-icon.png" alt="" width="28" height="28">
+        <span>Mission Control++</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="#shortcuts">Shortcuts</a>
+        <a href="#open">Open unsigned</a>
+        <a href="downloads/MissionControlPlusPlus.dmg" download>Download</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <img class="hero-icon" src="assets/app-icon.png" alt="Mission Control++ app icon" width="148" height="148">
+        <h1 id="hero-title">Mission Control++</h1>
+        <p class="tagline">Tiny shortcuts for Mission Control.</p>
+        <p class="hero-copy">
+          Close the window under your pointer or quit the hovered app without leaving Mission Control.
+        </p>
+        <div class="actions" aria-label="Download actions">
+          <a class="button primary" href="downloads/MissionControlPlusPlus.dmg" download>
+            <svg aria-hidden="true" viewBox="0 0 24 24">
+              <path d="M12 3v10m0 0 4-4m-4 4-4-4M4 15v3a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-3"/>
+            </svg>
+            Download DMG
+          </a>
+          <a class="button secondary" href="#open">Opening guide</a>
+        </div>
+        <p class="fineprint">Free • Native macOS • macOS 13+</p>
+      </section>
+
+      <section class="band feature" aria-labelledby="feature-title">
+        <figure class="media-frame">
+          <img
+            src="assets/mission-control-overview.png"
+            alt="Mission Control-style overview with Command-W and Command-Q shortcut overlays"
+          >
+        </figure>
+        <div class="section-copy">
+          <div class="round-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <path d="M6 6h12v12H6z"/>
+              <path d="m9 9 6 6m0-6-6 6"/>
+            </svg>
+          </div>
+          <h2 id="feature-title">Two shortcuts. No menu bar clutter.</h2>
+          <p>
+            Stay in Mission Control and act on the window you are already looking at. No Dock icon,
+            no menu bar item, no extra app chrome.
+          </p>
+        </div>
+      </section>
+
+      <section id="shortcuts" class="split" aria-labelledby="shortcuts-title">
+        <div class="section-copy">
+          <div class="round-icon warm" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <path d="M7 8h10M7 12h10M7 16h10"/>
+              <path d="M5 5h14v14H5z"/>
+            </svg>
+          </div>
+          <h2 id="shortcuts-title">Just the keys you wanted.</h2>
+          <p>
+            Mission Control++ only listens while Mission Control is active. Outside Mission Control,
+            your normal shortcuts stay normal.
+          </p>
+        </div>
+        <div class="shortcut-list" aria-label="Mission Control++ shortcuts">
+          <div class="shortcut-row">
+            <kbd>⌘W</kbd>
+            <span>Close hovered window</span>
+          </div>
+          <div class="shortcut-row">
+            <kbd>⌘Q</kbd>
+            <span>Quit hovered app</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="open" class="notice" aria-labelledby="open-title">
+        <div class="notice-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <path d="M12 3 5 6v5c0 4.4 2.9 8.5 7 10 4.1-1.5 7-5.6 7-10V6z"/>
+          </svg>
+        </div>
+        <div>
+          <h2 id="open-title">Unsigned for now.</h2>
+          <p>
+            This is a small free build, so macOS may say Apple cannot check it for malicious software.
+            To open it, go to System Settings → Privacy &amp; Security and choose Open Anyway.
+          </p>
+        </div>
+      </section>
+
+      <section class="requirements" aria-labelledby="requirements-title">
+        <h2 id="requirements-title">Requirements</h2>
+        <ul>
+          <li>
+            <span class="check" aria-hidden="true">✓</span>
+            macOS 13 Ventura or newer
+          </li>
+          <li>
+            <span class="check" aria-hidden="true">✓</span>
+            Accessibility permission
+          </li>
+          <li>
+            <span class="check" aria-hidden="true">✓</span>
+            Input Monitoring permission
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>Made for people who live in Mission Control.</p>
+      <a href="downloads/MissionControlPlusPlus.dmg" download>Download Mission Control++</a>
+    </footer>
+  </body>
+</html>
