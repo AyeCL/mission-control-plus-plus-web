@@ -374,7 +374,7 @@ footer {
 }
 
 footer p {
-  margin-bottom: 8px;
+  margin: 0 0 8px;
 }
 
 footer a {
@@ -385,6 +385,16 @@ footer a {
 
 footer a:hover {
   color: var(--primary);
+}
+
+.credit {
+  margin: 18px 0 0;
+  font-size: 14px;
+}
+
+.credit a {
+  color: #7a7e87;
+  font-weight: 600;
 }
 
 @media (max-width: 820px) {
