@@ -208,6 +208,10 @@ h1 {
   padding-bottom: 82px;
 }
 
+.supporter {
+  background: #fbfbfc;
+}
+
 .media-frame {
   margin: 0;
   min-width: 0;
@@ -258,6 +262,11 @@ h1 {
   color: #b47d00;
 }
 
+.supporter-icon {
+  background: rgba(38, 111, 239, 0.13);
+  color: var(--primary);
+}
+
 .round-icon svg,
 .notice-icon svg {
   width: 25px;
@@ -305,6 +314,48 @@ kbd {
 .shortcut-row span {
   color: #383b43;
   font-weight: 650;
+}
+
+.disabled-button {
+  margin-top: 24px;
+  opacity: 0.72;
+  pointer-events: none;
+}
+
+.supporter-note {
+  margin-top: 12px;
+  color: #7b7f87;
+  font-size: 14px;
+}
+
+.perks-list {
+  display: grid;
+  gap: 12px;
+  width: min(100%, 460px);
+  justify-self: end;
+}
+
+.perk-row {
+  display: grid;
+  grid-template-columns: 42px 1fr;
+  align-items: center;
+  gap: 14px;
+  min-height: 64px;
+  border: 1px solid var(--soft);
+  border-radius: var(--radius);
+  padding: 14px 16px;
+  background: white;
+}
+
+.perk-row span {
+  color: var(--primary);
+  font-size: 13px;
+  font-weight: 850;
+}
+
+.perk-row strong {
+  color: #30333a;
+  font-size: 16px;
 }
 
 .notice {
@@ -458,6 +509,11 @@ footer a:hover {
 
   .shortcut-list {
     justify-self: stretch;
+  }
+
+  .perks-list {
+    justify-self: stretch;
+    width: 100%;
   }
 
   .section-copy h2,
