@@ -363,7 +363,7 @@ kbd {
   grid-template-columns: auto 1fr;
   gap: 22px;
   width: min(100% - 48px, 1080px);
-  margin: 0 auto 72px;
+  margin: 72px auto;
   border: 1px solid var(--soft);
   border-radius: var(--radius);
   padding: 28px;
@@ -418,7 +418,12 @@ kbd {
 
 .changelog {
   background: #f7f8fa;
-  padding: 68px max(24px, calc((100vw - 1080px) / 2));
+  padding: 72px 24px;
+}
+
+.changelog-inner {
+  width: min(100%, 1080px);
+  margin: 0 auto;
 }
 
 .changelog-heading {
@@ -624,23 +629,20 @@ footer a:hover {
 
 @media (max-width: 520px) {
   .topbar {
-    width: min(100%, 350px);
+    width: calc(100% - 32px);
   }
 
   .brand span {
     display: none;
   }
 
+  .brand img {
+    width: 24px;
+    height: 24px;
+  }
+
   nav {
-    gap: 0;
-  }
-
-  nav a {
     display: none;
-  }
-
-  nav a:last-child {
-    display: inline;
   }
 
   body {
@@ -656,6 +658,7 @@ footer a:hover {
   .hero,
   .tagline,
   .hero-copy,
+  .fineprint,
   .section-copy,
   .section-copy h2,
   .section-copy p,
@@ -663,17 +666,24 @@ footer a:hover {
   .notice h2,
   .notice p,
   .requirements,
-  .changelog-heading,
-  .release-list {
-    max-width: 350px;
+  .changelog-inner {
+    max-width: 320px;
   }
 
   .hero {
-    width: min(100%, 350px);
+    width: min(100% - 48px, 320px);
+  }
+
+  .actions {
+    align-items: center;
+  }
+
+  .button {
+    width: 100%;
   }
 
   .media-frame {
-    width: min(100%, 350px);
+    width: min(100%, 320px);
   }
 
   .hero-copy,
