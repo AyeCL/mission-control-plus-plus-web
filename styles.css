@@ -127,6 +127,7 @@ h1 {
 
 .actions {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 12px;
   margin-bottom: 16px;
@@ -180,6 +181,17 @@ h1 {
 .secondary:hover {
   border-color: #b9bec9;
   box-shadow: 0 10px 24px rgba(23, 28, 38, 0.08);
+}
+
+.beta-download {
+  border-color: rgba(255, 109, 85, 0.45);
+  background: #fff8f6;
+  color: #aa3d2c;
+}
+
+.beta-download:hover {
+  border-color: var(--coral);
+  box-shadow: 0 10px 24px rgba(255, 109, 85, 0.13);
 }
 
 .fineprint {
